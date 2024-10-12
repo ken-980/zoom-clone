@@ -1,20 +1,29 @@
-import { Box, Grid2 } from "@mui/material";
+import { Grid2 } from "@mui/material";
 import VideoMain from "./video/VideoMain";
 import ChatMain from "./chat/MainChat";
+
+//video and chat
 export const MainVideoAndChat = () => {
   return (
     <>
-      <Box sx={{ backgroundColor: "#757ce8", height: "100vh" }}>
-        <Grid2 container spacing={2}>
-          <Grid2 size={10}>
-            <VideoMain />
-          </Grid2>
-
-          <Grid2 size={2}>
-            <ChatMain />
-          </Grid2>
+      <Grid2
+        sx={{
+          backgroundColor: "#263238",
+          height: "100vh",
+          padding: "10px",
+          overflow: "hidden",
+        }}
+        container
+        spacing={2}
+      >
+        <Grid2 size={9}>
+          <VideoMain />
         </Grid2>
-      </Box>
+
+        <Grid2 size={3}>
+          <ChatMain />
+        </Grid2>
+      </Grid2>
     </>
   );
 };
