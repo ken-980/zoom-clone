@@ -1,11 +1,15 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "../App";
+import { MainVideoAndChat } from "../components/MainVideoAndChat";
 
 //sign up later
 const routes = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <h2> Sign in </h2>,
+  },
+  {
+    path: "/call",
+    element: <MainVideoAndChat />,
   },
 ]);
 
