@@ -1,5 +1,7 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Grid2, Typography } from "@mui/material";
 import ChatHeaderTabs from "./ChatHeaderTabs";
+import CloseIcon from "@mui/icons-material/Close";
+
 const ChatMain = () => {
   return (
     <Box
@@ -10,7 +12,20 @@ const ChatMain = () => {
         height: "100%",
       }}
     >
-      <Typography sx={{ padding: "5px" }}> Meeting Details </Typography>
+      <Grid2
+        container
+        sx={{ padding: "10px 16px 10px 15px", justifyContent: "space-between" }}
+      >
+        <Grid2>
+          <Typography sx={{ fontSize: "15px" }}> Meeting Details </Typography>
+        </Grid2>
+
+        <Grid2>
+          <Button>
+            <CloseIcon />
+          </Button>
+        </Grid2>
+      </Grid2>
 
       <ChatHeaderTabs />
     </Box>

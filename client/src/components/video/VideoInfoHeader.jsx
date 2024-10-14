@@ -19,6 +19,7 @@ export const VideoInfoHeader = () => {
             container
             sx={{
               flexDirection: "row",
+              alignContent: "center",
             }}
             gap={2}
           >
@@ -33,13 +34,19 @@ export const VideoInfoHeader = () => {
 
             <Grid2>
               <Grid2>
-                <Typography sx={{ fontSize: "14px" }}>
+                <Typography sx={{ fontSize: "14px", color: "#adaeaa" }}>
                   {" "}
                   Time and Date{" "}
                 </Typography>
               </Grid2>
               <Grid2>
-                <Typography sx={{ fontSize: "16px" }}>
+                <Typography
+                  sx={{
+                    fontSize: "16px",
+                    fontWeight: "bold",
+                    color: "#f1eeed",
+                  }}
+                >
                   {" "}
                   Meetung Title{" "}
                 </Typography>
@@ -49,7 +56,20 @@ export const VideoInfoHeader = () => {
         </Grid2>
 
         {/* duration */}
-        <Grid2>duration</Grid2>
+        <Grid2>
+          <Typography
+            sx={{
+              padding: "1px 10px 1px 10px",
+              backgroundColor: "rgb(17 24 39)",
+              borderRadius: "5px",
+              color: "#ffff",
+              fontSize: "14px",
+            }}
+          >
+            {" "}
+            00:00:00{" "}
+          </Typography>
+        </Grid2>
       </Grid2>
     </>
   );

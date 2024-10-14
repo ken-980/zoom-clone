@@ -12,6 +12,7 @@ const VideoMain = () => {
         flexDirection: "column",
         padding: "5px",
         height: "100%",
+        alignContent: "center",
       }}
     >
       {/* meeting header info */}

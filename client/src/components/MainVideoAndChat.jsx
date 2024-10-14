@@ -8,10 +8,9 @@ export const MainVideoAndChat = () => {
     <>
       <Grid2
         sx={{
-          backgroundColor: "#263238",
+          backgroundColor: "#14120f",
           height: "100vh",
           padding: "10px",
-          overflow: "hidden",
         }}
         container
         spacing={2}
