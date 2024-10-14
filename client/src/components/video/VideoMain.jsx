@@ -1,10 +1,24 @@
-import { Box, Typography } from "@mui/material";
+import { Grid2 } from "@mui/material";
+import { VideoInfoHeader } from "./VideoInfoHeader";
+import { BottomMeetingControls } from "./BottomMeetingControls";
+import { Video } from "./Video";
 
 const VideoMain = () => {
   return (
-    <Box>
-      <Typography> Video main </Typography>
-    </Box>
+    <Grid2
+      container
+      sx={{
+        width: "100%",
+        flexDirection: "column",
+        padding: "5px",
+        height: "100%",
+      }}
+    >
+      {/* meeting header info */}
+      <VideoInfoHeader />
+      <Video />
+      <BottomMeetingControls />
+    </Grid2>
   );
 };
 

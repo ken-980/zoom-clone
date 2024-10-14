@@ -44,11 +44,7 @@ export default function ChatHeaderTabs() {
   return (
     <Box sx={{ width: "100%" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          aria-label="basic tabs example"
-        >
+        <Tabs value={value} onChange={handleChange} aria-label="basic tabs">
           <Tab label="Chats" {...a11yProps(0)} />
           <Tab label="Participants" {...a11yProps(1)} />
         </Tabs>
