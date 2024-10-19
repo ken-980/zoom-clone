@@ -1,6 +1,8 @@
 import { Grid2 } from "@mui/material";
 
-export const Video = () => {
+
+
+export const Video = ( ) => {
   return (
     <>
       <Grid2
@@ -9,10 +11,13 @@ export const Video = () => {
           width: "100%",
           backgroundColor: "#ffff",
           borderRadius: "10px",
+          position: "relative",
         }}
       >
-        Video
+        <h2> Main Video </h2>
       </Grid2>
     </>
   );
 };
+
+

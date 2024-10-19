@@ -1,6 +1,6 @@
 import { Grid2 } from "@mui/material";
 import { VideoInfoHeader } from "./VideoInfoHeader";
-import { BottomMeetingControls } from "./BottomMeetingControls";
+import { BottomMeetingControls } from "./MeetingControlsButtons";
 import { Video } from "./Video";
 
 const VideoMain = () => {
@@ -18,6 +18,7 @@ const VideoMain = () => {
       {/* meeting header info */}
       <VideoInfoHeader />
       <Video />
+        
       <BottomMeetingControls />
     </Grid2>
   );

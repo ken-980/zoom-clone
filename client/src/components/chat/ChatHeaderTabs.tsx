@@ -1,12 +1,13 @@
 import * as React from "react";
-import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
+import PropTypes, {InferProps} from "prop-types"
 
-function CustomTabPanel(props) {
-  const { children, value, index, ...other } = props;
+
+
+function CustomTabPanel({children, value, index } : InferProps<typeof CustomTabPanel.propTypes>)  {
 
   return (
     <div
@@ -14,7 +15,6 @@ function CustomTabPanel(props) {
       hidden={value !== index}
       id={`simple-tabpanel-${index}`}
       aria-labelledby={`simple-tab-${index}`}
-      {...other}
     >
       {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
     </div>
@@ -27,7 +27,7 @@ CustomTabPanel.propTypes = {
   value: PropTypes.number.isRequired,
 };
 
-function a11yProps(index) {
+function a11yProps(index : number) {
   return {
     id: `simple-tab-${index}`,
     "aria-controls": `simple-tabpanel-${index}`,
@@ -37,7 +37,7 @@ function a11yProps(index) {
 export default function ChatHeaderTabs() {
   const [value, setValue] = React.useState(0);
 
-  const handleChange = (event, newValue) => {
+  const handleChange  = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
 
