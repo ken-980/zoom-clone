@@ -1,29 +1,34 @@
 
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
+import React from "react";
 
-type Props = {
-  count : number
+
+type People = {
+  id? : number,
+  name : string,
+  profession : string
 }
 
-const FloatingParticipantView  = ({ count } : Props) => {
-
+export const FloatingParticipantView : React.FC<People> = ({ name, profession}) => {
+ 
   return ( 
+  
     <Box
       sx={{
-        height: "135px",
-        width: "230px",
-        right: "3px",
-        bottom: "4px",
-        margin: "2px",
+        height: "100px",
+        width: "220px",
+        margin: "5px",
         boxShadow: "rgba(0, 0, 0, 0.1) 0px 0px 10px 3px",
         borderRadius: "12px",
-        position: "absolute",
-      }}
-    >
-      <h2> participant {count} </h2>
+  
+      }} >
+        <Typography> {name} </Typography>
+        <Typography> {profession} </Typography>
     </Box>
+
+  
   );
 };
 
 
-export default FloatingParticipantView;
+
