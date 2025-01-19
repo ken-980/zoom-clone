@@ -15,6 +15,7 @@ export const MainVideoAndChat = () => {
         container
         spacing={2}
       >
+        {/* video and chat  */}
         <Grid2 size={9}>
           <VideoMain />
         </Grid2>
