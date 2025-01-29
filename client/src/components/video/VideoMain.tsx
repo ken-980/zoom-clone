@@ -5,20 +5,12 @@ import { Video } from "./Video";
 
 const VideoMain = () => {
   return (
-    <Grid2
-      container
-      sx={{
-        width: "100%",
-        flexDirection: "column",
-        padding: "5px",
-        height: "100%",
-        alignContent: "center",
-      }}
-    >
+    <Grid2 container sx={{ width: "100%", flexDirection: "column", padding: "5px", height: "100%", alignContent: "center" }}>
+      
       {/* meeting header info */}
       <VideoInfoHeader />
       <Video />
-        
+       
       <BottomMeetingControls />
     </Grid2>
   );
