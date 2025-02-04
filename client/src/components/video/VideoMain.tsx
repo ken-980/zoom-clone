@@ -9,8 +9,7 @@ const VideoMain = () => {
       
       {/* meeting header info */}
       <VideoInfoHeader />
-      <VideoApp />
-       
+        <VideoApp />
       <BottomMeetingControls />
     </Grid2>
   );
